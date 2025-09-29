@@ -30,7 +30,7 @@ image:scpivs44_image14.png["Écran client vSphere"]
 . Dans l'onglet configurer, sélectionnez une sauvegarde, puis cliquez sur *Renommer*.
 . Dans la boîte de dialogue *Renommer la sauvegarde*, entrez le nouveau nom, puis cliquez sur *OK*.
 +
-N'utilisez pas les caractères spéciaux suivants dans les noms des machines virtuelles, des datastores, des stratégies, des sauvegardes ou des groupes de ressources : & * $ # @ ! \ / : * ? " < > - | ; ' , . Un caractère de soulignement (_) est autorisé.
+N'utilisez pas les caractères spéciaux suivants dans les noms de machines virtuelles, de banques de données, de politiques, de sauvegardes ou de groupes de ressources : & * $ # @ ! \ / : * ?  " < > - | ; ' , et l'espace. Un caractère de soulignement (_) est autorisé.
 
 
 

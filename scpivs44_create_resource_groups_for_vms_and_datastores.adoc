@@ -113,11 +113,7 @@ C'est la façon la plus simple de créer un groupe de ressources. Toutefois, vou
 | Serveur vCenter | Sélectionnez un serveur vCenter. 
 
 
-| Nom | Entrez un nom pour le groupe de ressources.
-N'utilisez pas les caractères spéciaux suivants dans les machines virtuelles, les datastores, les règles,
-noms de sauvegarde ou de groupe de ressources :
-% Et * $ # @ ! \ / : * ? " < > - [barre verticale] ; ' , . Un caractère de soulignement (_) est autorisé. Les noms de VM ou de datastores contenant des caractères spéciaux sont tronqués, ce qui rend difficile la recherche d'une sauvegarde spécifique.
-En mode lié, chaque vCenter dispose d'un référentiel distinct de plug-in SnapCenter VMware. Par conséquent, vous pouvez utiliser des noms dupliqués dans les vCenters. 
+| Nom | Saisissez un nom pour le groupe de ressources. N'utilisez pas les caractères spéciaux suivants dans les noms de machines virtuelles, de banques de données, de politiques, de sauvegardes ou de groupes de ressources : % & * $ # @ ! \ / : * ? " < > - [barre verticale] ; ' , et espace. Un caractère de soulignement (_) est autorisé. Les noms de machines virtuelles ou de banques de données comportant des caractères spéciaux sont tronqués, ce qui rend difficile la recherche d'une sauvegarde spécifique. En mode lié, chaque vCenter dispose d'un référentiel de plug-ins SnapCenter VMware distinct.  Par conséquent, vous pouvez utiliser des noms en double dans plusieurs vCenters. 
 
 
 | Description | Entrez une description du groupe de ressources. 

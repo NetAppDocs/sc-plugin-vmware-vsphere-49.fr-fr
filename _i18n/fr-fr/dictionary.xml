@@ -92,11 +92,6 @@
   <block id="c4436d4a190778b7ec1e9461f6454bdd" category="cell">Serveur vCenter</block>
   <block id="df86b612dee850ddbf3bd636d14cd09e" category="cell">Sélectionnez un serveur vCenter.</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">Nom</block>
-  <block id="306239feaf3736ab46598c0abf660ee1" category="cell">Entrez un nom pour le groupe de ressources.
-N'utilisez pas les caractères spéciaux suivants dans les machines virtuelles, les datastores, les règles,
-noms de sauvegarde ou de groupe de ressources :
-% Et * $ # @ ! \ / : * ? " &lt; &gt; - [barre verticale] ; ' , . Un caractère de soulignement (_) est autorisé. Les noms de VM ou de datastores contenant des caractères spéciaux sont tronqués, ce qui rend difficile la recherche d'une sauvegarde spécifique.
-En mode lié, chaque vCenter dispose d'un référentiel distinct de plug-in SnapCenter VMware. Par conséquent, vous pouvez utiliser des noms dupliqués dans les vCenters.</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
   <block id="b1358d1843f648e7ea781a21a690cdd0" category="cell">Entrez une description du groupe de ressources.</block>
   <block id="96d008db67fc0b5551a926842bbb6a71" category="cell">Notification</block>
@@ -1314,7 +1309,6 @@ Si la sauvegarde VM est une sauvegarde partielle, définissez l'<block ref="0736
   <block id="1d92d0cbfdf6166c05997268d3378fe0" category="list-text">Mode lié</block>
   <block id="35f1c688325b0062756b2d7b0d00be28" category="paragraph">En mode lié, chaque vCenter dispose d'une appliance virtuelle distincte. Par conséquent, vous pouvez utiliser des noms dupliqués dans les vCenters. Cependant, vous devez créer la règle dans le même vCenter que le groupe de ressources.</block>
   <block id="9efc9e0c08da510b5195bb9dc4b1b7c2" category="list-text">Caractères non pris en charge</block>
-  <block id="69a02b2d668a0ebee1d9ac100a00074c" category="paragraph">N'utilisez pas les caractères spéciaux suivants dans VM, datastore, cluster, stratégie, sauvegarde, ou noms des groupes de ressources : % et * $ # @ ! \ / : * ? " &lt; &gt; - | ; ' , .</block>
   <block id="a051f3eeac4a83ec1f5d55c7aeba6f06" category="paragraph">Un caractère de soulignement (_) est autorisé.</block>
   <block id="a923c6bf503ee78e9fc4b4479248cff6" category="list-text">Spécifiez les paramètres de rétention.</block>
   <block id="2eff7650afc7423cc6df7c21eaaf0430" category="admonition">Si vous prévoyez d'activer la réplication SnapVault, définissez le nombre de rétention sur 2 sauvegardes ou plus. Si vous définissez le nombre de rétention sur 1 sauvegarde à conserver, l'opération de rétention peut échouer. En effet, la première copie Snapshot de référence est la copie Snapshot de référence de la relation SnapVault jusqu'à ce que la nouvelle copie Snapshot soit répliquée sur la cible.</block>
@@ -1585,7 +1579,6 @@ Attendez que le champ affiche l'état « connecté ».</block>
   <block id="86f5d700774abd1b4b1161e6afcd312e" category="section-title">Modifier les groupes de ressources</block>
   <block id="1850764f60496630a671ed4a4ca36a90" category="paragraph">Vous pouvez supprimer ou ajouter des ressources dans des groupes de ressources dans vCenter, détacher ou attacher des stratégies, modifier des plannings ou modifier toute autre option de groupe de ressources.</block>
   <block id="683a572529e7ee01c3f3b2f6e84ee453" category="paragraph">Si vous souhaitez modifier le nom d'un groupe de ressources, n'utilisez pas les caractères spéciaux suivants dans les noms de VM, datastore, stratégie, sauvegarde ou groupe de ressources :</block>
-  <block id="bf6bb853aafb837a490acb97d9acbf87" category="paragraph">% Et * $ # @ ! \ / : * ? " &lt; &gt; - | ; ' , .</block>
   <block id="bc967eed1e1f8494f71a02de0d06a1ba" category="list-text">Dans la liste de gauche de l'assistant *Modifier le groupe de ressources*, cliquez sur la catégorie que vous souhaitez modifier et entrez vos modifications.</block>
   <block id="e71911e6fc1645b76466cbac653dbb12" category="paragraph">Vous pouvez modifier plusieurs catégories.</block>
   <block id="cb0503d668bf3e03dd4da3d424936f20" category="list-text">Cliquez sur *Suivant* jusqu'à ce que la page Résumé s'affiche, puis cliquez sur *Terminer*.</block>
@@ -2192,7 +2185,6 @@ L'utilisateur ne peut pas sauvegarder les objets vSphere.</block>
   <block id="0b440f7132b6fe79c573c20ac70e3650" category="paragraph"><block ref="0b440f7132b6fe79c573c20ac70e3650" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d25235da54411fda3f47e1c47b94db2" category="list-text">Dans l'onglet configurer, sélectionnez une sauvegarde, puis cliquez sur *Renommer*.</block>
   <block id="27947ec6e4013d1b08faee7e509cae9e" category="list-text">Dans la boîte de dialogue *Renommer la sauvegarde*, entrez le nouveau nom, puis cliquez sur *OK*.</block>
-  <block id="f8ffb952d62ac560c6adb8ac7e15a58e" category="paragraph">N'utilisez pas les caractères spéciaux suivants dans les noms des machines virtuelles, des datastores, des stratégies, des sauvegardes ou des groupes de ressources : &amp; * $ # @ ! \ / : * ? " &lt; &gt; - | ; ' , . Un caractère de soulignement (_) est autorisé.</block>
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">Supprimer les sauvegardes</block>
   <block id="811a38ca6a4a37270419c2834515cf5c" category="paragraph">Vous pouvez supprimer le plug-in SnapCenter pour sauvegardes VMware vSphere si vous ne souhaitez plus effectuer de sauvegarde pour d'autres opérations de protection des données. Vous pouvez supprimer une sauvegarde ou supprimer plusieurs sauvegardes simultanément.</block>
   <block id="4b3cb5948249f5d59292e97ced52522d" category="paragraph">Vous ne pouvez pas supprimer les sauvegardes montées. Vous devez démonter une sauvegarde avant de la supprimer.</block>
@@ -2407,4 +2399,8 @@ Les économies de stockage représentent le rapport entre la capacité logique (
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">Les workflows d'API REST pour modifier les planifications intégrés</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">Effectuez une mise à niveau vers un nouveau correctif de la même version</block>
   <block id="147e8233cabd13a871f077b92a377a39" category="sidebar">Documentation du plug-in SnapCenter pour VMware vSphere 4.9</block>
+  <block id="2c6c18c9ea36047e0562b8c63f8cdc3b" category="paragraph">N'utilisez pas les caractères spéciaux suivants dans les noms de machines virtuelles, de banques de données, de clusters, de stratégies, de sauvegardes ou de groupes de ressources : % &amp; * $ # @ ! \ / : * ?  " &lt; &gt; - | ; ' , et l'espace.</block>
+  <block id="6f19ce572bcae00ee63d0e21fd68e1b0" category="cell">Saisissez un nom pour le groupe de ressources. N'utilisez pas les caractères spéciaux suivants dans les noms de machines virtuelles, de banques de données, de politiques, de sauvegardes ou de groupes de ressources : % &amp; * $ # @ ! \ / : * ? " &lt; &gt; - [barre verticale] ; ' , et espace. Un caractère de soulignement (_) est autorisé. Les noms de machines virtuelles ou de banques de données comportant des caractères spéciaux sont tronqués, ce qui rend difficile la recherche d'une sauvegarde spécifique. En mode lié, chaque vCenter dispose d'un référentiel de plug-ins SnapCenter VMware distinct.  Par conséquent, vous pouvez utiliser des noms en double dans plusieurs vCenters.</block>
+  <block id="9d9d361ca66b8af5110eb490c5e40c1a" category="paragraph">N'utilisez pas les caractères spéciaux suivants dans les noms de machines virtuelles, de banques de données, de politiques, de sauvegardes ou de groupes de ressources : &amp; * $ # @ ! \ / : * ?  " &lt; &gt; - | ; ' , et l'espace. Un caractère de soulignement (_) est autorisé.</block>
+  <block id="8651a2d0c6ade87f04ae0bca90386289" category="paragraph">% &amp; * $ # @ ! \ / : * ?  " &lt; &gt; - | ; ' , et l'espace. Un caractère de soulignement (_) est autorisé.</block>
 </blocks>
